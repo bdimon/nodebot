@@ -8,7 +8,7 @@ const ProductItem = ({product, className, onAdd}) => {
     }
     return (
         <div className={'product ' + className}>
-            <div className={'img'}></div>
+            <div className={'img'}/>
             <div className={'title'}>{product.title}</div>
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>
@@ -17,7 +17,7 @@ const ProductItem = ({product, className, onAdd}) => {
             <Button className={'add-btn'} onClick={onAddHandler}>
                 Add to Cart
             </Button>
-            </div>
+        </div>
     );
 };
 

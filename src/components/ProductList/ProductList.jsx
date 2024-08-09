@@ -72,7 +72,7 @@ const ProductList = () => {
         } else {
             tlg.MainButton.show();
             tlg.MainButton.setParams({
-                text: `Buy for ${getTotalPrice(newItems)}`
+                text: `Buy for $${getTotalPrice(newItems)}`
             });
         }
     }

@@ -17,6 +17,9 @@ const products = [
     {id: '7', title: 'Hat 7', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
     {id: '8', title: 'Hat 8', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
     {id: '9', title: 'Hat 9', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
+    {id: '10', title: 'Hat 10', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
+    {id: '11', title: 'Hat 11', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
+    {id: '12', title: 'Hat 12', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
 ];
 
 const getTotalPrice = (items = []) => {

@@ -6,6 +6,7 @@ import {useCallback, useEffect, useState} from 'react';
 
 const port = process.env.REACT_APP_PORT;
 
+
 const products = [
     {id: '1', title: 'Hat 1', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
     {id: '2', title: 'Hat 2', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
@@ -42,7 +43,7 @@ const ProductList = () => {
             },
             body: JSON.stringify(data),
         })
-    }, [])
+    }, [addedItems])
 
     useEffect(() => {
         tlg.onEvent('mainButtonClicked', onSendData)
@@ -74,7 +75,6 @@ const ProductList = () => {
     }
 
 
-    // const onSendData = useCallback()
     return (
         <div className={'list'}>
             {

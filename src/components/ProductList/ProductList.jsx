@@ -4,7 +4,7 @@ import ProductItem from '../ProductItem/ProductItem';
 import {useTelegram} from '../../hooks/useTelegram';
 import {useCallback, useEffect, useState} from 'react';
 
-const port = process.env.REACT_APP_PORT;
+const port = process.env.REACT_APP_PORT || '8000';
 
 
 const products = [

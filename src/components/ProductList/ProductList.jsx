@@ -4,6 +4,8 @@ import ProductItem from '../ProductItem/ProductItem';
 import {useTelegram} from '../../hooks/useTelegram';
 import {useCallback, useEffect, useState} from 'react';
 
+const port = process.env.REACT_APP_PORT;
+
 const products = [
     {id: '1', title: 'Hat 1', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
     {id: '2', title: 'Hat 2', price: 15, description: 'Lorem ipsum dolor sit amet consect adipisicing.'},
@@ -31,8 +33,9 @@ const ProductList = () => {
         const data = {
             products: addedItems,
             totalPrice: getTotalPrice(addedItems),
+            queryId,
         }
-        fetch('http://localhost:8000', {
+        fetch(`http://localhost:${port}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

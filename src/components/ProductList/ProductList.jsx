@@ -36,7 +36,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch(`http://localhost:${port}/web-data`, {
+        fetch(`https://node-bot-server.vercel.app:${port}/web-data`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

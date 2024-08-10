@@ -39,7 +39,9 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch(`https://node-bot-otmm.onrender.com:${port}/web-data`, {
+        console.log(data);
+
+        fetch(`https://node-bot-otmm.onrender.com/web-data`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

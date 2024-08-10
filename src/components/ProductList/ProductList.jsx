@@ -39,7 +39,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch(`https://node-bot-server.vercel.app:${port}/web-data`, {
+        fetch(`https://node-bot-otmm.onrender.com:${port}/web-data`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
